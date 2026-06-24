@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetdaoMP Mart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loginOverlay" class="overlay">
+  <div class="card">
+    <h2>NetdaoMP Mart Login</h2>
+    <input id="user" placeholder="ชื่อผู้ใช้">
+    <input id="pass" type="password" placeholder="รหัสผ่าน">
+    <div id="extra"></div>
+    <button onclick="login()">เข้าสู่ระบบ</button>
+  </div>
+</div>
+
+<nav>
+  <h2>NetdaoMP Mart</h2>
+  <div>
+    <a href="#home">หน้าหลัก</a>
+    <a href="#products">สินค้าต่างๆ</a>
+    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#contact">ติดต่อเรา</a>
+    <button onclick="logout()">Logout</button>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+<h1>เช็กสินค้าและสั่งซื้อผ่าน LINE ได้<br>จัดส่งถึงบ้านในพื้นที่<br>อัปเดตโปรโมชั่นทุกสัปดาห์<br>รับชำระเงินได้หลายช่องทาง</h1>
+</section>
+
+<section id="about">
+<h2>เกี่ยวกับเรา</h2>
+<p>เราเป็นร้านขายของชำและสินค้าอุปโภคบริโภคที่มุ่งเน้นความสะดวก รวดเร็ว และเข้าถึงง่าย</p>
+</section>
+
+<section id="products">
+<h2>รายการสินค้า</h2>
+<div class="products" id="productsGrid"></div>
+</section>
+
+<section id="contact">
+<h2>ติดต่อและที่ตั้งของร้าน</h2>
+<p>โทร 098-765-4321</p>
+<p>Email: shixkie04s@gmail.com</p>
+<p>Facebook และ Line OA ตามลิงก์ที่ผู้ใช้กำหนด</p>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
